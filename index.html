@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced Drop Down List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="custom-select">
+        <div class="select-box">
+            <input type="text" class="tags-input" name="tags" hidden/>
+            <div class="selected-options">
+
+            </div>
+            <div class="arrow">
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+        <div class="options">
+            <div class="options-search-tags">
+                <input type="text" class="search-tags" placeholder="Search tags...">
+                <button class="clear" type="button"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="option all-tags" data-value="All">Select All</div>
+            <div class="option" data-value="Black">Black</div>
+            <div class="option" data-value="Green">Green</div>
+            <div class="option" data-value="Navy">Navy</div>
+            <div class="option" data-value="Orange">Orange</div>
+            <div class="option" data-value="Pink">Pink</div>
+            <div class="option" data-value="Red">Red</div>
+            <div class="option" data-value="Sliver">Sliver</div>
+            <div class="option" data-value="White">White</div>
+            <div class="option" data-value="Yellow">Yellow</div>
+            <div class="no-result-message" style="display: none">No result match</div>
+        </div>
+        <span class="tag-error-msg error"></span>
+    </div>
+    <input type="button" class="btn-submit" value="Submit">
+</div>
+
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
